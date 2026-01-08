@@ -1,4 +1,8 @@
+
 This is a Product Requirement Document (PRD) for the "1-Click IEP Request."
+
+**What is an IEP?**
+An IEP (Individualized Education Program) is a plan for students with disabilities to get special education support. This tool helps parents quickly request one.
 
 This PRD is designed for the "Vibe Coding" approach: it prioritizes speed, zero maintenance, and maximum user privacy (no database).
 
