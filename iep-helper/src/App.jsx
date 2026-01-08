@@ -376,6 +376,13 @@ ${formData.date}`
                     </>
                   )}
                 </button>
+                  <button
+                    onClick={() => setCurrentStep(1)}
+                    className="btn-outline flex-1 flex items-center justify-center space-x-2"
+                    aria-label="Start New Request"
+                  >
+                    <span>Start New Request</span>
+                  </button>
               </div>
             </div>
           )}
