@@ -11,6 +11,7 @@ import {
   Check
 } from 'lucide-react'
 import jsPDF from 'jspdf'
+  import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   // Form state
@@ -28,6 +29,7 @@ function App() {
   const [copied, setCopied] = useState(false)
 
   // Area of concern options with icons
+        <Analytics />
   const concernOptions = [
     {
       id: 'academic',
