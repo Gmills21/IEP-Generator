@@ -335,7 +335,20 @@ ${formData.date}`
 
           {/* Step 4: Review & Action */}
           {currentStep === 4 && (
+            <Step4Tracker />
             <div className="space-y-6">
+              // Invisible component to track step 4 hits
+              function Step4Tracker() {
+                // Only run once per mount
+                React.useEffect(() => {
+                  fetch('/api/counter', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ step4: true })
+                  });
+                }, []);
+                return null;
+              }
               <h2 className="text-2xl font-bold text-slate-800 mb-4">
                 Your letter is ready!
               </h2>
