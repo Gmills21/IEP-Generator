@@ -291,7 +291,10 @@ ${formData.date}`
                       ? 'bg-primary-600 text-white shadow-lg'
                       : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
                     }`}
-                  onClick={() => setFormData({ ...formData, hasDiagnosis: false, diagnosisName: '' })}
+                  onClick={() => {
+                    setFormData({ ...formData, hasDiagnosis: false, diagnosisName: '' });
+                    setCurrentStep(4);
+                  }}
                   aria-label="No diagnosis"
                 >
                   No
@@ -377,7 +380,19 @@ ${formData.date}`
                   )}
                 </button>
                   <button
-                    onClick={() => setCurrentStep(1)}
+                    onClick={() => {
+                      setCurrentStep(1);
+                      setFormData({
+                        parentName: '',
+                        childName: '',
+                        schoolName: '',
+                        date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                        areaOfConcern: '',
+                        specificExample: '',
+                        hasDiagnosis: false,
+                        diagnosisName: ''
+                      });
+                    }}
                     className="btn-outline flex-1 flex items-center justify-center space-x-2"
                     aria-label="Start New Request"
                   >
