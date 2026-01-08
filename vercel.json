@@ -1,0 +1,11 @@
+{
+    "buildCommand": "cd iep-helper && npm install && npm run build",
+    "outputDirectory": "iep-helper/dist",
+    "installCommand": "cd iep-helper && npm install",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

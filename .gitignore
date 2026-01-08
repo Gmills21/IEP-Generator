@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+iep-helper/node_modules/
+
+# Build outputs
+dist/
+iep-helper/dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
