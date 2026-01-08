@@ -128,12 +128,16 @@ ${formData.date}`
     <div className="min-h-screen py-8 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
+
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-slate-800 mb-2">
             1-Click IEP Request Generator
           </h1>
           <p className="text-slate-600 text-lg">
             Create a formal evaluation request in under 2 minutes
+          </p>
+          <p className="text-slate-500 text-sm mt-2">
+            <strong>What is an IEP?</strong> An IEP (Individualized Education Program) is a plan for students with disabilities to get special education support.
           </p>
         </div>
 
